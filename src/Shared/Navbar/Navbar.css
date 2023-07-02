@@ -1,0 +1,46 @@
+.navBar{
+
+}
+
+.navBar-bg{
+    background-color: rgba(0,0,0,0.8);
+    transition: 0.3s;
+}
+
+.nav-menu li a {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hamburger{
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+   .nav-menu{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -3;
+    transition: 0.3s;
+   } 
+
+   .nav-menu.active {
+    left: 0;
+   }
+
+   .nav-menu li a{
+    font-size: 1.2rem;
+   }
+
+   .hamburger{
+    display: initial;
+}
+}
