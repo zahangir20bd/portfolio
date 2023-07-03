@@ -1,9 +1,15 @@
 import React from "react";
+import SectionBanner from "../components/SectionBanner/SectionBanner";
+import PricingCard from "../components/PricingCard/PricingCard";
 
 const Projects = () => {
   return (
     <div>
-      <h2>This is Projects Section</h2>
+      <SectionBanner
+        heading="PROJECTS"
+        subHeading="Some of my most recent works"
+      />
+      <PricingCard />
     </div>
   );
 };

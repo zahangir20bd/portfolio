@@ -1,9 +1,10 @@
 import React from "react";
+import SectionBanner from "../components/SectionBanner/SectionBanner";
 
 const About = () => {
   return (
     <div>
-      <h2>About page</h2>
+      <SectionBanner heading="ABOUT ME" subHeading="MERN Stack Web Developer" />
     </div>
   );
 };

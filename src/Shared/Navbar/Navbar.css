@@ -3,13 +3,14 @@
 }
 
 .navBar-bg{
-    background-color: rgba(0,0,0,0.8);
+    background-color: #000000cc;
     transition: 0.3s;
 }
 
 .nav-menu li a {
     font-size: 1rem;
     font-weight: 500;
+    /* background-color: #131313cc; */
 }
 
 .hamburger{
@@ -33,7 +34,7 @@
    } 
 
    .nav-menu.active {
-    left: 0;
+    left: 0%;
    }
 
    .nav-menu li a{

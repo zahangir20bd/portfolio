@@ -1,9 +1,10 @@
 import React from "react";
+import SectionBanner from "../components/SectionBanner/SectionBanner";
 
 const Contact = () => {
   return (
     <div>
-      <h2>This is Contact Page</h2>
+      <SectionBanner heading="CONTACT" subHeading="Let's have a chat" />
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  //   const handleToggle = () => setOpen(!open);
+  const handleToggle = () => setOpen(!open);
   const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY) {
@@ -34,32 +34,24 @@ const Navbar = () => {
       </Link>
 
       <ul className={`${open ? "nav-menu active" : "nav-menu "} flex gap-4`}>
-        <li>
-          <Link to="/">Home</Link>
+        <li onClick={handleToggle}>
+          <NavLink to="/">Home</NavLink>
         </li>
-        <li>
-          <Link to="/projects">Projects</Link>
+        <li onClick={handleToggle}>
+          <NavLink to="/projects">Projects</NavLink>
         </li>
-        <li>
-          <Link to="/about">About</Link>
+        <li onClick={handleToggle}>
+          <NavLink to="/about">About</NavLink>
         </li>
-        <li>
-          <Link to="/contact">Contact</Link>
+        <li onClick={handleToggle}>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
       </ul>
       <div className="hamburger">
         {open ? (
-          <FaTimes
-            onClick={() => setOpen(!open)}
-            size={20}
-            style={{ color: "#fff" }}
-          />
+          <FaTimes onClick={handleToggle} size={20} style={{ color: "#fff" }} />
         ) : (
-          <FaBars
-            onClick={() => setOpen(!open)}
-            size={20}
-            style={{ color: "#fff" }}
-          />
+          <FaBars onClick={handleToggle} size={20} style={{ color: "#fff" }} />
         )}
       </div>
     </nav>
