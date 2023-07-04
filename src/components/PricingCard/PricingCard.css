@@ -8,3 +8,30 @@
 .card:hover{
     background-color: #141414;
 }
+
+.card h3{
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.card p { 
+    padding: 10px 0 ;
+}
+
+.bar {
+    border-bottom: 1px solid #eee;
+    width: 10%;
+    margin: 1.5rem auto;
+    display: block;
+}
+.btc{
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.card-button {
+    display: block;
+    width: 80%;
+    margin: 2rem auto ;
+}

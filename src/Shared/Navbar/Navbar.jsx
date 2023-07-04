@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaDownload, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -42,6 +42,15 @@ const Navbar = () => {
         </li>
         <li onClick={handleToggle}>
           <NavLink to="/about">About</NavLink>
+        </li>
+        <li onClick={handleToggle}>
+          <a
+            href="zahangir's_resume.pdf"
+            download
+            className="flex items-center gap-1"
+          >
+            Resume <FaDownload />
+          </a>
         </li>
         <li onClick={handleToggle}>
           <NavLink to="/contact">Contact</NavLink>

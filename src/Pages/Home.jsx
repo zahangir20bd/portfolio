@@ -1,16 +1,15 @@
 import React from "react";
 import Banner from "../components/Banner/Banner";
-import Projects from "./Projects";
-import About from "./About";
-import Contact from "./Contact";
+
+import ProjectCard from "../components/ProjectCard/ProjectCard";
+import PricingCard from "../components/PricingCard/PricingCard";
 
 const Home = () => {
   return (
     <>
       <Banner />
-      <Projects />
-      <About />
-      <Contact />
+      <ProjectCard />
+      <PricingCard />
     </>
   );
 };
